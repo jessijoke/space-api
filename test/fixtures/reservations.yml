@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  wheelchair: 1
+  ald: 1
+  total: 1
+  reservation_number: 1
+
+two:
+  name: MyString
+  wheelchair: 1
+  ald: 1
+  total: 1
+  reservation_number: 1
