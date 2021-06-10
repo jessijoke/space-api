@@ -35,13 +35,22 @@ class ReservationsController < ApplicationController
         end
     end
 
+    def look_up_reservation
+        reservation = Reservation.where(:reservation_number => params[:reservation_number])
+        if reservation
+            render json: ReservationSerializer.new(reservation)
+        else
+            render json: { message: 'Reservation not found' }
+        end
+    end
+
     private
     def set_reservation
         reservation = Reservation.find(params[:id])
       end
 
     def reservation_params
-        params.require(:reservation).permit(:name, :wheelchair, :ald, :total, :trAdult, :trChild, :trSenior, :trVet)
+        params.require(:reservation).permit(:name, :wheelchair, :ald, :total, :trAdult, :trChild, :trSenior, :trVet, :reservation_number)
     end
 
     def create_ticket(ticket_type, amount, id)
