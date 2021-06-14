@@ -29,7 +29,7 @@ class ReservationsController < ApplicationController
             create_ticket("child", childTickets, resID)
             create_ticket("senior", seniorTicket, resID)
             create_ticket("vet", vetTickets, resID)
-            render json: reservation
+            render json: ReservationSerializer.new(reservation)
         else
             render json: { message: 'Something went wrong' }
         end
