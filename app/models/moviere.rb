@@ -1,0 +1,2 @@
+class Moviere < ApplicationRecord
+end

@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_06_194656) do
+ActiveRecord::Schema.define(version: 2021_06_15_032103) do
+
+  create_table "movieres", force: :cascade do |t|
+    t.string "name"
+    t.integer "total"
+    t.integer "reservation_number"
+    t.integer "movie1"
+    t.integer "movie2"
+    t.integer "movie3"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "reservations", force: :cascade do |t|
     t.string "name"
