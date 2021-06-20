@@ -1,5 +1,4 @@
 class TicketSerializer
   include JSONAPI::Serializer
-  attributes :ticket_type
-  belongs_to :reservation
+  belongs_to :tickets_of, polymorphic: true
 end

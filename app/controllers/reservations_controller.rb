@@ -57,7 +57,7 @@ class ReservationsController < ApplicationController
         x = amount
         puts "id is equal to #{id}"
         while x > 0
-            Ticket.create(ticket_type: ticket_type, reservation_id: id)
+            Ticket.create(ticket_type: ticket_type, tickets_of_id: id, tickets_of_type: "Reservation")
             x -= 1
         end
     end
