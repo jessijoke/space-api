@@ -3,7 +3,7 @@
 ## Air & Space Museum BACKEND
 
 Air & Space Museum is a public museum webpage that allows users to get tickets for the museum attractions, and learn more about the museum. This is a Rails API backend that uses CORS to connect to connect the javascript frontend to the backend.
-This is the backend only. The project requires the frontend, and the puzzle game. Repo links included. [Frontend](https://github.com/jessijoke/space-api) [Puzzle Game](https://github.com/jessijoke/spacePuzzle)
+This is the backend only. The project requires the frontend, and the puzzle game. Repo links included. [Frontend](https://github.com/jessijoke/space-api) | [Puzzle Game](https://github.com/jessijoke/spacePuzzle)
 
 [View Live Frontend](https://jessijoke.github.io/space/)
 
